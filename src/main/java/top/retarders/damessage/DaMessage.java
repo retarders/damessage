@@ -26,12 +26,9 @@ public class DaMessage extends Plugin implements Listener {
     }
     @EventHandler
     public void onPing(ProxyPingEvent event) {
-//                String message =
-//                    messages[(int) Math.floor(new Random().nextInt() * messages.length)];
+        String message = messages[(int) Math.floor(new Random().nextInt() * messages.length)];
         ServerPing serverPing = new ServerPing();
-        serverPing.setDescription(
-                "&d&lRetarders Network &7- The Reconnaissance\n&7> ");
+        serverPing.setDescription("&d&lRetarders Network &7- The Reconnaissance\n&7> " + message);
         event.setResponse(serverPing);
     }
-
 }
