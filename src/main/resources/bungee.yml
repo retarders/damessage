@@ -1,0 +1,4 @@
+name: DaMessage
+version: ${project.version}
+main: top.retarders.damessage.DaMessage
+description: lesssgooo
