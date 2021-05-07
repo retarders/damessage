@@ -28,7 +28,7 @@ public class DaMessage extends Plugin implements Listener {
     @EventHandler
     public void onPing(ProxyPingEvent event) {
         String message = messages[new Random().nextInt(messages.length)];
-        ServerPing serverPing = new ServerPing();
+        ServerPing serverPing = event.getResponse();
         serverPing.setDescription(ChatColor.translateAlternateColorCodes(
             '&', "&d&lRetarders Network &7- The Reconnaissance\n&7> " + message));
         event.setResponse(serverPing);
